@@ -1,0 +1,25 @@
+1)
+Ma function filter.js ne fonctionne pas correctement, 
+je voudrais que lors du click du bouton,  les véhicules qui ne correspond pas ne s'affiche pu
+
+2)
+Icone Phone & Formulaire généré par bootstrap dans véhicules d'occasion, 
+aucun affichage, testé uniquement pour la mercedes a reproduire sur chaque véhicule
+
+3)
+script details.js ne fonctionne pas, je souhaite qu'au click d'un des boutons,
+la card et son déscriptif passe en premier plan et le reste du contenue est un effect de flou.
+lorsqu'on a réparer ce script, il faudrait ajouté une barre de scroll pour la galerie photo.
+
+4)
+Mon bouton de navbar s'affiche lorsqu'on réduit la page mais au click il doit 
+afficher un choix de navigation, voir pour le bougé un peu a gauche.
+
+5)
+Formulaire de témoignage ne s'affiche pas comme je le souhaiterai. 
+J'aimerai créer un system de vote de 1 a 5 étoils avec des étoils générer par Bootstrap,
+et gérer via Php et JS. Pas encore au point ! J'ai mis des type=radio en attendant.
+
+Aucune maitrise de DB 
+
+

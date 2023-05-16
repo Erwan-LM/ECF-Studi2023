@@ -1,0 +1,199 @@
+/* Couleurs */
+:root {
+  --couleur-principale: #7d7172;
+  --couleur-secondaire: #47464b;
+  --couleur-tertiaire: #797979;
+  --couleur-fond: #262526;
+  --couleur-texte: #F2F2F2;
+}
+
+/* Styles globaux */
+body {
+  font-family: "Barlow", sans-serif;
+  --couleur-texte: #F2F2F2;
+  --couleur-fond: #262526;
+  color: var(--couleur-texte);
+  background: linear-gradient(to bottom, var(--couleur-principale), var(--couleur-tertiaire));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rajdhani", sans-serif;
+  color: var(--couleur-texte);
+}
+
+a {
+  color: var(--couleur-principale);
+}
+
+button {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  border: none;
+}
+
+/* Styles spécifiques */
+header {
+  background-color: var(--couleur-principale);
+  padding: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 5px
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#accueil {
+  background-color: var(--couleur-secondaire);
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styles des cards */
+.card {
+  background-color: var(--couleur-fond);
+  background: linear-gradient(to bottom, var(--couleur-principale), var(--couleur-tertiaire));
+}
+
+.card-body h5.card-title {
+  color: var(--couleur-texte);
+}
+
+/* Styles spécifiques pour les cartes de services */
+#services .card {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-texte);
+}
+
+/* Styles pour la card du bouton */
+.card-details {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* Styles pour la galerie d'images */
+.gallery {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery img {
+  width: 30%;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+/* Classe pour placer la card au-dessus des autres */
+.card-on-top {
+  position: relative;
+  z-index: 9999;
+  /* Valeur élevée pour être au
+-dessus des autres éléments */
+}
+
+/* Classe pour appliquer un flou à l'arrière-plan */
+.overlay-blur {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour la carte active */
+.carte-active {
+  z-index: 9999;
+}
+
+/* Style pour l'arrière-plan flouté */
+.arriere-plan-floute {
+  filter: blur(5px);
+}
+
+/* Styles pour le tableau des caractéristiques */
+#tableau-caracteristiques {
+  clear: both;
+}
+
+/* Styles pour la liste des équipements */
+#liste-equipements {
+  clear: both;
+}
+
+#tableau-caracteristiques table {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+#tableau-caracteristiques table td:first-child {
+  width: 50%;
+}
+
+#liste-equipements ul {
+  column-count: 1;
+  column-gap: 20px;
+  margin-top: 10px;
+}
+
+#services,
+#horaires,
+#occasion,
+#contact,
+#temoignages {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#occasion img {
+  max-width: 100%;
+  height: auto;
+}
+
+#occasion li {
+  margin-bottom: 20px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#temoignages li {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: var(--couleur-fond);
+  padding: 20px;
+  color: var(--couleur-texte);
+  border-radius: 20px;
+}
