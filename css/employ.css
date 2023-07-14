@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#employ-page {
+  justify-content: center;
+  margin: 20px;
+  color: white;
+}
+
+.row {
+  width: 100%;
+}
+
+.col {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-valider,
+.btn-refuser {
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.btn-valider {
+  background-color: #758875;
+  color: #fff;
+}
+
+.btn-refuser {
+  background-color: #8f5f5d;
+  color: #fff;
+}
+
+#btn-detail {
+  background-color: #9f860b;
+  color: black;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #fff;
+  /* Ajout de la couleur du texte */
+}
+
+
+.pagination a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #ccc;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

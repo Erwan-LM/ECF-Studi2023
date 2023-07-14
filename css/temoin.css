@@ -1,0 +1,138 @@
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.rating label:before {
+  content: "☆";
+  padding: 5px;
+}
+
+.rate1:before {
+  content: "☆";
+  padding: 5px;
+  color: #f7d000;
+}
+
+.rate2:before {
+  content: "☆☆";
+  padding: 5px;
+  color: #f7d000;
+}
+
+.rate3:before {
+  content: "☆☆☆";
+  padding: 5px;
+  color: #f7d000;
+}
+
+.rate4:before {
+  content: "☆☆☆☆";
+  padding: 5px;
+  color: #f7d000;
+}
+
+.rate5:before {
+  content: "☆☆☆☆☆";
+  padding: 5px;
+  color: #f7d000;
+}
+
+.rating input:checked~label,
+.rating input:checked~label~label {
+  color: #f7d000;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+  color: #f7d000;
+}
+
+#temoignages li {
+  margin-bottom: 20px;
+}
+
+.temoin-container {
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.temoin-container .card {
+  scroll-snap-align: start;
+}
+
+.temoin-container .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.temoin-container .page-link {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.temoin-container .page-link:hover {
+  background-color: #ccc;
+}
+
+/* Style pour la section d'ajout de témoignage */
+#ajouter-temoignage {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#ajouter-temoignage h2 {
+  text-align: center;
+}
+
+#ajouter-temoignage form {
+  display: flex;
+  flex-direction: column;
+}
+
+#ajouter-temoignage .form-group {
+  margin-bottom: 10px;
+}
+
+#ajouter-temoignage label {
+  font-weight: bold;
+}
+
+#ajouter-temoignage input,
+#ajouter-temoignage textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#ajouter-temoignage button[type="submit"] {
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#ajouter-temoignage button[type="submit"]:hover {
+  background-color: #758875;
+}
+
+#compteur_temoin {
+  text-align: center;
+  margin-top: 20%;
+}
