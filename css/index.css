@@ -15,12 +15,17 @@ body {
   background: linear-gradient(to bottom, var(--couleur-principale), var(--couleur-tertiaire));
 }
 
-/* Styles spécifiques aux appareils mobiles */
+/* Styles pour la version de bureau */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* Styles pour la version mobile */
 @media (max-width: 767px) {
-
-
-  .section-container {
-    padding: 10px;
+  .mobile-only {
+    display: block;
   }
 }
 

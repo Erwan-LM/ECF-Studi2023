@@ -63,7 +63,7 @@ $marques = $statementMarques->fetchAll(PDO::FETCH_COLUMN);
 <link rel="stylesheet" href="css/filter.css">
 
 <div id="occasion">
-  <nav class="filter-navbar">
+  <nav class="filter-navbar desktop-only">
     <div class="filter-nav">
       <div class="row">
         <div class="col">
@@ -105,81 +105,6 @@ $marques = $statementMarques->fetchAll(PDO::FETCH_COLUMN);
       </div>
     </div>
   </nav>
-
-  <!-- Contenu du filtre pour le mode mobile -->
-  <div id="mobile-filter-content" class="desktop-only" style="display: none;">
-    <nav class="filter-navbar">
-      <div class="filter-nav">
-        <div class="row">
-          <div class="col">
-            <div class="select-column">
-              <select id="marque-select">
-                <option value="Toutes">Toutes les marques</option>
-                <?php foreach ($marques as $marqueOption): ?>
-                  <option value="<?php echo $marqueOption; ?>" <?php if ($marque === $marqueOption) echo 'selected'; ?>><?php echo $marqueOption; ?></option>
-                <?php endforeach; ?>
-              </select>
-            </div>
-            <div class="input-column">
-              <button id="filtre-btn">Filtrer</button>
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-column">
-              <input type="number" id="prix-min-input" placeholder="Prix min">
-              <input type="number" id="prix-max-input" placeholder="Prix max">
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-column">
-              <input type="number" id="kilometrage-min-input" placeholder="Kilométrage min">
-              <input type="number" id="kilometrage-max-input" placeholder="Kilométrage max">
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-column">
-              <input type="number" id="annee-min-input" placeholder="Année min">
-              <input type="number" id="annee-max-input" placeholder="Année max">
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-  var toggleFilterBtn = document.getElementById('toggle-filter-btn');
-  var mobileFilterContent = document.getElementById('mobile-filter-content');
-
-  toggleFilterBtn.addEventListener('click', function() {
-    if (mobileFilterContent.style.display === 'none') {
-      mobileFilterContent.style.display = 'block';
-    } else {
-      mobileFilterContent.style.display = 'none';
-    }
-
-    // Réorganiser l'affichage des éléments de bureau et mobile
-    var filterNav = document.querySelector('.filter-nav');
-    var desktopOnlyElements = document.querySelectorAll('.desktop-only');
-
-    if (mobileFilterContent.style.display === 'none') {
-      // Afficher les éléments de bureau
-      filterNav.style.display = 'grid';
-
-      for (var i = 0; i < desktopOnlyElements.length; i++) {
-        desktopOnlyElements[i].style.display = 'block';
-      }
-    } else {
-      // Masquer les éléments de bureau
-      filterNav.style.display = 'none';
-
-      for (var i = 0; i < desktopOnlyElements.length; i++) {
-        desktopOnlyElements[i].style.display = 'none';
-      }
-    }
-  });
-});
 
   </script>
   <div id="vehicules-container"></div>

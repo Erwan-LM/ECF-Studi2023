@@ -16,6 +16,43 @@ h5 {
   color: var(--couleur-texte);
 }
 
+/* Styles spécifiques pour la version mobile */
+@media (max-width: 767px) {
+  .mobile-only .col {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-nav .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filter-nav .col {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filter-nav .col input[type="number"],
+  .filter-nav .col select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    .filter-nav .col {
+      flex-basis: 50%;
+    }
+  }
+}
+
 a {
   color: var(--couleur-principale);
 }
@@ -61,6 +98,10 @@ button {
   position: relative;
 }
 
+.filter-nav .row .col {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Classes pour la mise en page en colonnes et lignes */
 .row {
@@ -82,7 +123,17 @@ button {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
   .desktop-only {
     display: block;
   }
