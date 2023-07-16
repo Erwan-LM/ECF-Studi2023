@@ -118,23 +118,3 @@ button {
 .col:last-child {
   margin-right: 0;
 }
-
-.desktop-only {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .desktop-only {
-    display: block;
-  }
-}
-
-.desktop-only {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .desktop-only {
-    display: block;
-  }
-}

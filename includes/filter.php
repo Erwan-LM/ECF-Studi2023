@@ -63,7 +63,7 @@ $marques = $statementMarques->fetchAll(PDO::FETCH_COLUMN);
 <link rel="stylesheet" href="css/filter.css">
 
 <div id="occasion">
-  <nav class="filter-navbar desktop-only">
+  <nav class="filter-navbar">
     <div class="filter-nav">
       <div class="row">
         <div class="col">
@@ -74,9 +74,9 @@ $marques = $statementMarques->fetchAll(PDO::FETCH_COLUMN);
                 <option value="<?php echo $marqueOption; ?>" <?php if ($marque === $marqueOption) echo 'selected'; ?>><?php echo $marqueOption; ?></option>
               <?php endforeach; ?>
             </select>
-          </div>
             <div class="input-column">
               <button id="filtre-btn">Filtrer</button>
+              </div>
             </div>
           </div>
         <div class="col">

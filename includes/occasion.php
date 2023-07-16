@@ -1,6 +1,6 @@
 <?php
 // Définir le nombre de véhicules d'occasion à afficher par page
-$nombreVehiculesParPage = 3;
+$nombreVehiculesParPage = 9;
 
 // Récupérer le numéro de la page actuelle
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -25,7 +25,7 @@ $vehiculesOccasion = $statement->fetchAll();
 
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-10">
       <h2>Véhicules d'occasion</h2>
       <div id="voitures-occasion" class="card-deck">
         <?php foreach ($vehiculesOccasion as $voiture): ?>
