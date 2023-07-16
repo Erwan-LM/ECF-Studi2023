@@ -251,3 +251,50 @@ INSERT INTO vente_occasion (marque, modele, prix, annee, kilometrage, image, car
 ('Lexus', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('Tesla', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 ('Alpine', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- Création de la table voiture_occasion
+CREATE TABLE voitures_occasion (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  marque VARCHAR(45),
+  modele VARCHAR(45),
+  prix DECIMAL(10, 2),
+  image longblob,
+  annee INT(11),
+  kilometrage INT(11)
+);
+
+INSERT INTO voitures_occasion (id, marque, modele, prix, image, annee, kilometrage)
+VALUES
+(1, 'McLaren', '', 50000.00, '', 2000, 20000),
+(2, 'Toyota', '', 20000.00, '', 1000, 10000),
+(3, 'Volkswagen', '', 0.00, '', 0, 0),
+(4, 'Ford', '', 0.00, '', 0, 0),
+(5, 'Honda', '', 0.00, '', 0, 0),
+(6, 'Chevrolet', '', 0.00, '', 0, 0),
+(7, 'Nissan', '', 0.00, '', 0, 0),
+(8, 'BMW', '', 0.00, '', 0, 0),
+(9, 'Mercedes-Benz', '', 0.00, '', 0, 0),
+(10, 'Audi', '', 0.00, '', 0, 0),
+(11, 'Hyundai', '', 0.00, '', 0, 0),
+(12, 'Kia', '', 0.00, '', 0, 0),
+(13, 'Tesla', '', 0.00, '', 0, 0),
+(14, 'Subaru', '', 0.00, '', 0, 0),
+(15, 'Mazda', '', 0.00, '', 0, 0),
+(16, 'Fiat', '', 0.00, '', 0, 0),
+(17, 'Renault', '', 0.00, '', 0, 0),
+(18, 'Peugeot', '', 0.00, '', 0, 0),
+(19, 'Jaguar', '', 0.00, '', 0, 0),
+(20, 'Land Rover', '', 0.00, '', 0, 0),
+(21, 'Volvo', '', 0.00, '', 0, 0),
+(22, 'Porsche', '', 0.00, '', 0, 0),
+(23, 'Aston Martin', '', 0.00, '', 0, 0),
+(24, 'Ferrari', '', 0.00, '', 0, 0),
+(25, 'Lamborghini', '', 0.00, '', 0, 0),
+(26, 'Rolls-Royce', '', 0.00, '', 0, 0),
+(27, 'Bentley', '', 0.00, '', 0, 0),
+(28, 'Maserati', '', 0.00, '', 0, 0),
+(29, 'Mini', '', 0.00, '', 0, 0),
+(30, 'Alfa Romeo', '', 0.00, '', 0, 0),
+(31, 'Lexus', '', 0.00, '', 0, 0),
+(32, 'Tesla', '', 0.00, '', 0, 0),
+(33, 'Alpine', '', 0.00, '', 0, 0);
