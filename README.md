@@ -13,6 +13,7 @@
 - Téléchargez et installez MySQL Workbench 8.0.33 (ou tout autre logiciel de gestion de base de données) depuis le site officiel : [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/)
 - Sélectionnez votre système d'exploitation : Microsoft Windows
 - Sur ma page GitHub ([https://github.com/Erwan-LM/ECF-Studi2023/tree/master](https://github.com/Erwan-LM/ECF-Studi2023/tree/master)), ouvrez le fichier `BD.sql`
+- Première connexion à la base de donnée crée via mysql workbench (utilisé le mots de passe : root)
 - Exécutez les requêtes SQL une par une dans MySQL Workbench en utilisant l'icône d'exécution (éclair)
 
 ## Étape 3: Installation de Visual Studio Code
