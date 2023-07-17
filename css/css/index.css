@@ -1,0 +1,201 @@
+/* Couleurs */
+:root {
+  --couleur-principale: #7d7172;
+  --couleur-secondaire: #47464b;
+  --couleur-tertiaire: #797979;
+  --couleur-fond: #262526;
+  --couleur-texte: #F2F2F2;
+}
+
+/* Styles globaux */
+body {
+  font-family: "Barlow", sans-serif;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+  background: linear-gradient(to bottom, var(--couleur-principale), var(--couleur-tertiaire));
+}
+
+/* Styles pour la version de bureau */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+/* Styles pour la version mobile */
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* Styles spécifiques aux tablettes */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .section-container {
+    padding: 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rajdhani", sans-serif;
+}
+
+a {
+  color: var(--couleur-principale);
+}
+
+button {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  border: none;
+}
+
+/* Style temoigngages */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles des cards */
+.card {
+  width: 100%;
+  min-width: 600px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+  background: linear-gradient(to bottom, #565F64, #303437);
+}
+
+.card-body h5.card-title {
+  color: var(--couleur-texte);
+}
+
+/* Styles spécifiques pour les cartes de services */
+#services .card {
+  background-color: var(--couleur-principale);
+}
+
+
+/* Styles spécifiques pour chaque section */
+#services,
+#horaires {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.horaires-container {
+  min-width: 500px;
+}
+
+.services-container,
+.horaires-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.services-container .row,
+.horaires-container .row {
+  width: 100%;
+}
+
+.horaires-container .col-md-6,
+.services-container .col-md-6 {
+  padding: 10px;
+}
+
+/* Styles spécifiques pour les cartes de services */
+
+.services-container .card {
+  width: calc(33.33%);
+  min-width: 300px;
+
+}
+
+/* Styles pour la card du bouton */
+.card-details {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* Styles spécifiques pour chaque section */
+#services,
+#horaires,
+#occasion,
+#contact,
+#temoignages {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.section-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-container .section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.temoin-card {
+  max-width: 300px;
+}
+
+.services-card {
+  max-width: fit-content;
+}
+
+#occasion img {
+  max-width: 100%;
+  height: auto;
+}
+
+#occasion li {
+  margin-bottom: 20px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+  background-color: var(--couleur-fond);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--couleur-fond);
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--couleur-texte);
+}

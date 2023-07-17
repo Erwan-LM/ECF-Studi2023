@@ -1,0 +1,61 @@
+/* Styles Bootstrap personnalisés */
+.custom-button {
+  background-color: var(--couleur-fond);
+  color: white;
+  padding: 8px 16px;
+  margin: 30px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: var(--couleur-tertiaire);
+}
+
+header {
+  background-color: var(--couleur-principale);
+  padding: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#accueil {
+  background-color: var(--couleur-secondaire);
+  padding: 20px;
+}
+
+/* Nouveaux styles pour les boutons */
+.custom-button-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.custom-button-container .custom-button {
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.button-link {
+  color: white;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  text-decoration: underline;
+  color: red;
+}

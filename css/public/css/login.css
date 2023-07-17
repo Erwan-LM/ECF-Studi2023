@@ -1,0 +1,38 @@
+#login-form input[type="submit"].custom-button {
+  display: none;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#login-form .form-group {
+  margin-bottom: 10px;
+}
+
+#login-form label {
+  font-weight: bold;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#login-form input[type="submit"] {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  background-color: #5cb85c;
+  color: #fff;
+  cursor: pointer;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #4cae4c;
+}

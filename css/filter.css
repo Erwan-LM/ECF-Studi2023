@@ -1,0 +1,120 @@
+/* Styles globaux */
+body {
+  font-family: "Barlow", sans-serif;
+  --couleur-texte: #F2F2F2;
+  --couleur-fond: #262526;
+  color: var(--couleur-texte);
+  background: linear-gradient(to bottom, var(--couleur-principale), var(--couleur-tertiaire));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rajdhani", sans-serif;
+  color: var(--couleur-texte);
+}
+
+/* Styles spécifiques pour la version mobile */
+@media (max-width: 767px) {
+  .mobile-only .col {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-nav .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filter-nav .col {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filter-nav .col input[type="number"],
+  .filter-nav .col select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    .filter-nav .col {
+      flex-basis: 50%;
+    }
+  }
+}
+
+a {
+  color: var(--couleur-principale);
+}
+
+#vehicules-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-texte);
+  border: none;
+}
+
+.filter-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.select-column,
+.input-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.filter-navbar {
+  position: relative;
+}
+
+.filter-nav .row .col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Classes pour la mise en page en colonnes et lignes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
