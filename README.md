@@ -17,17 +17,7 @@
 - Exécutez les requêtes SQL une par une dans MySQL Workbench en utilisant l'icône d'exécution (éclair)
 - Sur ma page GitHub ([https://github.com/Erwan-LM/ECF-Studi2023/tree/master](https://github.com/Erwan-LM/ECF-Studi2023/tree/master)), récupérer le dépot et placer le dans le dossier de mamp > htdocs
 
-<<<<<<< HEAD
-## Étape 3: Installation de Visual Studio Code
-
-- Téléchargez et installez la version Windows 8, 10 ou 11 de Visual Studio Code depuis le site officiel : [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-- Ouvrez Visual Studio Code
-- Sur ma page GitHub ([https://github.com/Erwan-LM/ECF-Studi2023/tree/master](https://github.com/Erwan-LM/ECF-Studi2023/tree/master)), récupérer le dépot et placer le dans le dossier de mamp > htdocs
-
-## Étape 4: Configuration de la base de données
-=======
 ## Étape 3: Configuration de la base de données
->>>>>>> 81e09f013f5b221b47151329f6cb27c95d814be5
 
 - Pour vous connecter à la base de données du projet, consultez le fichier `config.php` dans le dossier `includes`. Des valeurs par défaut y sont déjà définies.
 - Vous avez accès à un compte administrateur et à deux comptes employés, mais les mots de passe sont hachés.
