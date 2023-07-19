@@ -12,6 +12,7 @@
 
 - Téléchargez et installez MySQL Workbench 8.0.33 (ou tout autre logiciel de gestion de base de données) depuis le site officiel : [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/)
 - Sélectionnez votre système d'exploitation : Microsoft Windows
+<<<<<<< HEAD
 - Sur ma page GitHub ([https://github.com/Erwan-LM/ECF-Studi2023/tree/master](https://github.com/Erwan-LM/ECF-Studi2023/tree/master)), ouvrez le fichier `BD.sql`
 - Exécutez les requêtes SQL une par une dans MySQL Workbench en utilisant l'icône d'exécution (éclair)
 
@@ -27,13 +28,27 @@
 - Vous avez maintenant importé avec succès le code du référentiel GitHub sur votre ordinateur. Vous pouvez accéder au répertoire cloné et travailler avec les fichiers et le code localement.
 
 ## Étape 4: Configuration de la base de données
+=======
+- Sur ma page GitHub ([https://github.com/Erwan-LM/ECF-Studi2023/tree/main](https://github.com/Erwan-LM/ECF-Studi2023/tree/main)), ouvrez le fichier `BD.sql`
+- Première connexion à la base de donnée crée via mysql workbench (utilisé le mots de passe : root)
+- Exécutez les requêtes SQL une par une dans MySQL Workbench en utilisant l'icône d'exécution (éclair)
+- Sur ma page GitHub ([https://github.com/Erwan-LM/ECF-Studi2023/tree/main](https://github.com/Erwan-LM/ECF-Studi2023/tree/main)), récupérer le dépot et placer le dans le dossier de mamp > htdocs
+
+## Étape 3: Configuration de la base de données
+>>>>>>> d3203bb596ba6cb178ed12b4f2ceaef7d151a66c
 
 - Pour vous connecter à la base de données du projet, consultez le fichier `config.php` dans le dossier `includes`. Des valeurs par défaut y sont déjà définies.
 - Vous avez accès à un compte administrateur et à deux comptes employés, mais les mots de passe sont hachés.
 - Voici le mot de passe administrateur par défaut qui vous permettra d'accéder plus tard à la version administrateur et à la page `admin.php` de l'application : `p@$$word` (vous pouvez le modifier dans la base de données et le hacher ici : [https://phppasswordhash.com/](https://phppasswordhash.com/))
+<<<<<<< HEAD
 - Voici le mot de passe employé par défaut utilisé pour les deux comptes employés créés par l'administrateur : `password1` (vous pouvez le modifier dans la base de données et le hacher ici : [https://phppasswordhash.com/](https://phppasswordhash.com/))
 
 ## Étape 5: Accéder à l'application
+=======
+- Voici le mot de passe employé par défaut utilisé pour les deux comptes employés créés par l'administrateur : `password1` (vous pouvez le modifier dans la base de données et le hasher ici : [https://phppasswordhash.com/](https://phppasswordhash.com/))
+
+## Étape 4: Accéder à l'application
+>>>>>>> d3203bb596ba6cb178ed12b4f2ceaef7d151a66c
 
 - Ouvrez un navigateur et saisissez l'URL `localhost` pour accéder à l'application.
 
